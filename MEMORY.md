@@ -46,19 +46,25 @@ _This is my curated memory. It helps me remember who Trevor is, what we've done,
 
 ## Agents Configured (Cleaned up Feb 23, 2026)
 
-| Agent | Model | Provider |
-|-------|-------|----------|
-| **main** | minimax-m2.5:cloud | Ollama (local) |
-| **professor** | claude-opus-4-6 | Anthropic |
-| **grok** | grok-4 | xAI |
-| **kimi** | moonshot/kimi-k2.5 | NVIDIA |
-| **openai** | gpt-4o-mini | OpenAI |
+| Agent | Model | Provider | Cost |
+|-------|-------|----------|------|
+| **main** | minimax-m2.5:cloud | Ollama | Free |
+| **professor** | claude-opus-4-6 | Anthropic | Paid |
+| **grok** | grok-4 | xAI | Paid |
+| **kimi** | moonshot/kimi-k2.5 | Moonshot (free tier) | Free |
+| **openai** | gpt-4o-mini | OpenAI | Paid |
+| **trinity** | arcee-ai/trinity-large-preview:free | OpenRouter | Free |
+| **qwen** | qwen/qwen3-235b-a22b-thinking:free | OpenRouter | Free |
+| **flash** | stepfun/step-3.5-flash:free | OpenRouter | Free |
 
-All agents now have valid models and API keys configured.
-| **main** | ollama/minimax-m2.5:cloud | Daily driver - cheap & fast |
-| **professor** | anthropic/claude-opus-4-6 | Heavy reasoning |
-| **grok** | xai/grok-4-2025-01-05 | Creative tasks |
-| **kimi** | nvidia/moonshot/kimi-k2.5 | Fast/cheap via NVIDIA NIM |
+### API Keys (Stored in openclaw.json)
+- **OpenAI:** sk-proj-KOH_9XRF... (gpt-4o-mini, o1)
+- **xAI:** xai-G7O6eri... (grok-4)
+- **NVIDIA:** nvapi-PFPyMN2... (kimi via NVIDIA)
+- **Anthropic:** sk-ant-api03... (claude-opus-4-6)
+- **OpenRouter:** sk-or-v1... (trinity, qwen, flash - FREE)
+- **ElevenLabs:** sk_cbe1ae1a... (TTS voice)
+- **Gemini:** AIzaSyDv... (saved but disabled - needs paid tier)
 
 ## Key Tools Available (brew)
 
