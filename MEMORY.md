@@ -44,10 +44,17 @@ _This is my curated memory. It helps me remember who Trevor is, what we've done,
 - **NVIDIA:** nvapi-PFPyMN2... (for kimi agent)
 - **ElevenLabs:** sk_cbe1ae1a... (for TTS voice - NOW WORKING!)
 
-## Agents Configured
+## Agents Configured (Cleaned up Feb 23, 2026)
 
-| Agent | Model | Purpose |
-|-------|-------|---------|
+| Agent | Model | Provider |
+|-------|-------|----------|
+| **main** | minimax-m2.5:cloud | Ollama (local) |
+| **professor** | claude-opus-4-6 | Anthropic |
+| **grok** | grok-4 | xAI |
+| **kimi** | moonshot/kimi-k2.5 | NVIDIA |
+| **openai** | gpt-4o-mini | OpenAI |
+
+All agents now have valid models and API keys configured.
 | **main** | ollama/minimax-m2.5:cloud | Daily driver - cheap & fast |
 | **professor** | anthropic/claude-opus-4-6 | Heavy reasoning |
 | **grok** | xai/grok-4-2025-01-05 | Creative tasks |
