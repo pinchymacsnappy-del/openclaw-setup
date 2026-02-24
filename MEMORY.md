@@ -51,13 +51,11 @@ _This is my curated memory. It helps me remember who Trevor is, what we've done,
 | **main** | minimax-m2.5:cloud | Ollama | Free |
 | **professor** | claude-opus-4-6 | Anthropic | Paid |
 | **grok** | grok-4 | xAI | Paid |
-| **kimi** | nvidia/moonshot/kimi-k2.5 | NVIDIA | Paid* |
 | **openai** | gpt-4o-mini | OpenAI | Paid |
 | **trinity** | arcee-ai/trinity-large-preview:free | OpenRouter | Free |
 | **qwen** | qwen/qwen3.5-plus-02-15 | OpenRouter | Free |
-| **flash** | stepfun/step-3.5-flash:free | OpenRouter | Free |
 
-*Note: Kimi via NVIDIA was failing with 404 - may need different model
+*Note: Removed kimi and flash (not working)
 
 ### API Keys (Stored in openclaw.json)
 - **OpenAI:** sk-proj-KOH_9XRF... (gpt-4o-mini, o1)
