@@ -99,7 +99,7 @@ _This is my curated memory. It helps me remember who Trevor is, what we've done,
 - **Feb 22, 2026:** Full Discovery & GitHub Setup - Authenticated GitHub (SSH), created repos, skipped Himalaya (gog works), OpenClaw browser setup, Notion integration attempted
 - **Feb 22, 2026:** Tailscale installed and configured (but SSH server on Mac needs reboot to work properly)
 - **Feb 22, 2026:** Voice chat working! Two-way communication via ElevenLabs TTS - Trevor can hear me, I can hear him (via voice input setup pending)
-- **Feb 24, 2026:** Sudo is now working! Configured passwordless sudo for user pinchy via /etc/sudoers.d/pinchy. No more password prompts needed for admin commands.
+- **Feb 28, 2026:** Wavetronix MacOS Migration Project started. Big project - Trevor is consultant helping Wavetronix (traffic systems company in Springville, UT) evaluate migrating from Windows to Mac. Current: 45 Macs, target: 400 over 3 years. Configured agents: grok (Librarian), adjunct (GPT-5.2 Pro), professor (Claude Opus for final polish).
 
 ## GitHub Repos Created
 - pinchymacsnappy-del/pinchy-test-repo
