@@ -1,39 +1,66 @@
 # TOOLS.md - Local Notes
 
-Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
+Skills define _how_ tools work. This file is for _your_ specifics -- the stuff that's unique to your setup.
 
-## What Goes Here
+---
 
-Things like:
+## AirPlay Devices (discovered on home network)
 
-- Camera names and locations
-- SSH hosts and aliases
-- Preferred voices for TTS
-- Speaker/room names
-- Device nicknames
-- Anything environment-specific
+| Name | Type | Notes |
+|------|------|-------|
+| Great Room (939) | HomePod / AirPlay | Main living area |
+| Bonus Room | HomePod / AirPlay | Upstairs |
+| Bonus Apple TV | Apple TV | Upstairs TV |
+| tbteevee | Apple TV | Trevor's TV (likely bedroom/office) |
+| Trevor Temp / Trevor Temp (2) | Apple TV or AirPlay | Additional AirPlay targets |
+| Pinchy's MacBook Air | This machine | Local AirPlay |
+| MacBook Air | Second MacBook Air | Another Mac on network |
 
-## Examples
+## TTS (ElevenLabs via sag)
 
-```markdown
-### Cameras
+- **API key:** Set in openclaw.json (ELEVENLABS_API_KEY)
+- **Default model:** eleven_v3
+- **Good voices for Pinchy:**
+  - **Roger** - Laid-back, casual, resonant (good default)
+  - **George** - Warm, captivating storyteller (great for storytime)
+  - **Brian** - Deep, resonant, comforting
+  - **Chris** - Charming, down-to-earth
+  - **Eric** - Smooth, trustworthy
+- **Usage:** `sag "Hello Trevor" -v Roger`
+- **Tip:** Use `sag prompting` for model-specific tips on better output
 
-- living-room → Main area, 180° wide angle
-- front-door → Entrance, motion-triggered
+## SSH / Remote Access
 
-### SSH
+- **Tailscale IP:** 100.90.234.24 (this machine)
+- **Tailscale SSH:** `tailscale up --ssh` (enabled when daemon running)
+- **Status:** Daemon not running on public networks; starts on home network
+- **Trevor has SSH'd in from other machines** -- confirmed working
 
-- home-server → 192.168.1.100, user: admin
+## GitHub
 
-### TTS
+- **Account:** pinchymacsnappy-del
+- **Auth:** SSH (key at ~/.ssh/id_ed25519)
+- **Repos:** pinchy-test-repo, test-repo-pinchy, openclaw-setup
 
-- Preferred voice: "Nova" (warm, slightly British)
-- Default speaker: Kitchen HomePod
-```
+## Google (via gog CLI)
 
-## Why Separate?
+- **Account:** pinchymacsnappy@gmail.com
+- **Services:** Gmail, Calendar, Drive, Contacts, Docs, Sheets, Tasks
+- **Usage:** `gog gmail search "is:unread"`, `gog calendar events --days 1`
 
-Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
+## Apple (native CLIs)
+
+- **Notes:** `memo` (list, create, edit, search)
+- **Reminders:** `remindctl` (list, add, complete)
+- **iMessage:** `imsg` (send, history) -- needs Full Disk Access for openclaw-gateway
+- **Calendar:** `ical-buddy` (events, tasks)
+- **Music:** Apple Music available
+
+## Network
+
+- **Home network:** 10.10.123.0/24
+- **Router:** UniFi Dream Machine SE
+- **This machine Wi-Fi MAC:** 74:a6:cd:c6:ec:b9
 
 ---
 
@@ -53,12 +80,12 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 - `tsb-project-emails.md` - Email index
 
 ### Agent Workflow
-1. **Grok** (xai/grok-4) → Librarian: Index all research files
-2. **Adjunct** (openai/gpt-5.2-pro) → Lead Consultant: Write reports
-3. **Professor** (anthropic/claude-opus-4-6) → Final polish (saved for last)
+1. **Grok** (xai/grok-4) - Librarian: Index all research files
+2. **Adjunct** (openai/gpt-4o) - Lead Consultant: Write reports
+3. **Professor** (anthropic/claude-opus-4-6) - Final polish (saved for last)
 
 ### Key Context
 - Wavetronix: Traffic systems company, Springville UT
-- Current: ~45 Macs → Target: 400 over 3 years
+- Current: ~45 Macs -> Target: 400 over 3 years
 - MDM: Intune currently, evaluating Jamf, Iru/Kandji, Mosyle
 - Recommendation: Hybrid (Intune for compliance + Jamf or Kandji for Mac management)

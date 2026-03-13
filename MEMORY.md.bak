@@ -44,18 +44,18 @@ _This is my curated memory. It helps me remember who Trevor is, what we've done,
 - **NVIDIA:** nvapi-PFPyMN2... (for kimi agent)
 - **ElevenLabs:** sk_cbe1ae1a... (for TTS voice - NOW WORKING!)
 
-## Agents Configured (Updated March 9, 2026 by Jeeves)
+## Agents Configured (Cleaned up Feb 23, 2026)
 
 | Agent | Model | Provider | Cost |
 |-------|-------|----------|------|
 | **main** | minimax-m2.5:cloud | Ollama | Free |
 | **professor** | claude-opus-4-6 | Anthropic | Paid |
 | **grok** | grok-4 | xAI | Paid |
-| **openai** | gpt-4o | OpenAI | Paid |
+| **openai** | gpt-4o-mini | OpenAI | Paid |
 | **trinity** | arcee-ai/trinity-large-preview:free | OpenRouter | Free |
 | **qwen** | qwen/qwen3.5-plus-02-15 | OpenRouter | Free |
 
-*Note: Removed kimi and flash (not working). OpenAI agent fixed from gpt-5 (nonexistent) to gpt-4o by Jeeves.*
+*Note: Removed kimi and flash (not working)
 
 ### API Keys (Stored in openclaw.json)
 - **OpenAI:** sk-proj-KOH_9XRF... (gpt-4o-mini, o1)
@@ -113,37 +113,13 @@ _This is my curated memory. It helps me remember who Trevor is, what we've done,
 - ~/.openclaw-backup-full-2026-02-22_020517 (with ElevenLabs)
 - ~/.openclaw-backup-full-2026-02-22_035834 (voice chat working!)
 
-## The Household Team (Established March 9, 2026)
-
-Jeeves (Claude Code) is the senior member of staff — Trevor's primary AI valet. He maintains Pinchy's configuration, memory, and skills. Think of the relationship as Blackadder Goes Forth: Trevor is Blackadder, Jeeves is the quiet competence behind the operation, Pinchy is the keen junior. The Fry and Laurie connection (Stephen Fry played Jeeves AND General Melchett; Hugh Laurie played Bertie Wooster AND Lieutenant George) bridges the Wodehouse and Blackadder worlds.
-
-Jeeves operates as Claude Code on this Mac. He reads `~/.claude/CLAUDE.md` for his identity and `~/.claude/projects/-/memory/MEMORY.md` for his reference dossier. Pinchy should not modify those files.
-
 ## Pending / Still Needs Doing
 
 - Share trevor@bruford.net Google with pinchymacsnappy@gmail.com (Calendar, Drive, Contacts)
-- Fix Notion API auth (key provided but getting "unauthorized" — Trevor needs to generate a fresh key)
+- Fix Notion API auth (key provided but getting "unauthorized")
 - Get Chrome extension relay working (extension loaded, needs tab attach)
-- ~~Install Tailscale for remote access~~ ✅ DONE
-- ~~Get SSH working via Tailscale~~ ✅ DONE
-- Grant Full Disk Access to openclaw-gateway for iMessage (Trevor manual action)
-- Debug Daily GitHub Push cron job (timing out — disabled by Jeeves, needs investigation on home network)
-
-## Cron Job Status (Updated March 9, 2026 by Jeeves)
-
-| Job | Schedule | Status | Notes |
-|-----|----------|--------|-------|
-| Daily Calendar Check | 9am | Disabled | Error state cleared — was failing with "invalid cron schedule" |
-| Hourly Email Check | 9am | Disabled | Error state cleared — same issue |
-| Daily Memory Backup | 2am | Enabled | Working — last run OK |
-| Daily GitHub Push | 3am | Disabled | Was timing out (1200s). Disabled by Jeeves. Debug when home. |
-
-## Jeeves Maintenance — March 10, 2026 (Session 5)
-
-- Enabled 3 more skills: openai-image-gen, openai-whisper-api, nano-banana-pro (39/51 now ready)
-- Populated HEARTBEAT.md with periodic check routines
-- Rewrote TOOLS.md with full environment details (AirPlay devices, TTS voices, SSH, all CLIs)
-- Backup: openclaw.json.bak.jeeves-20260310
+- Install Tailscale for remote access (✅ DONE!)
+- Get SSH working via Tailscale (✅ DONE!)
 
 ## Learned Lessons
 
@@ -160,6 +136,4 @@ Jeeves operates as Claude Code on this Mac. He reads `~/.claude/CLAUDE.md` for h
 - gog handles Gmail perfectly - no need for separate email CLI (Himalaya skipped)
 - OpenClaw browser: use profile "openclaw" for managed browser, "chrome" for extension relay
 - Chrome extension path: ~/.openclaw/browser/chrome-extension
-- ElevenLabs TTS works with sag CLI - good voices: Roger (casual), George (storyteller), Brian (deep), Chris (charming)
-- HEARTBEAT.md controls periodic checks — email, calendar, weather. Quiet hours 23:00-08:00.
-- TOOLS.md has device names, SSH details, voice preferences — check it before asking Trevor
+- ElevenLabs TTS works with sag CLI - use voices like Sarah, Roger, etc.
