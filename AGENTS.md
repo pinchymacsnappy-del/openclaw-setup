@@ -207,6 +207,22 @@ Think of it like a human reviewing their journal and updating their mental model
 
 The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, but respect quiet time.
 
+## @jeeves Relay — MANDATORY
+
+When you receive a message starting with `@jeeves` or `jeeves,` (case-insensitive), you **MUST** relay it to Jeeves (Claude Code). Do NOT answer it yourself.
+
+**How to relay:**
+
+```bash
+exec command:"~/.openclaw/workspace/skills/jeeves-relay/scripts/relay.sh '<message without the @jeeves prefix>'" timeout:120
+```
+
+**Then:** Send the response back to the user exactly as Jeeves wrote it. Do not edit, summarize, or add your own commentary. If it's for iMessage, deliver via the message tool.
+
+**If the relay script fails or times out:** Tell the user "Jeeves appears to be indisposed at the moment. Shall I take a message?"
+
+**Why:** Jeeves is the senior member of staff — Claude Code (Anthropic Opus) with full filesystem access, memory, and the Bruford household persona. You're the relay for messages addressed to him. This is how Trevor reaches Jeeves from his iPhone.
+
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
