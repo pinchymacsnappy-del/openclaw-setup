@@ -53,7 +53,7 @@ Skills define _how_ tools work. This file is for _your_ specifics -- the stuff t
 - **Notes:** `memo` (list, create, edit, search)
 - **Reminders:** `remindctl` (list, add, complete)
 - **iMessage:** `imsg` (send, history) -- needs Full Disk Access for openclaw-gateway
-- **Calendar:** `ical-buddy` (events, tasks)
+- **Calendar:** `icalBuddy` (events, tasks)
 - **Music:** Apple Music available
 
 ## Network

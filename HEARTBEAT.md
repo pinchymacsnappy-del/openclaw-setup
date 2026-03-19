@@ -9,9 +9,9 @@ When you receive a heartbeat, work through these items. Skip any that were check
 - If anything looks urgent or personal (not promotions/spam), notify Trevor via iMessage
 - Silently skip marketing, trial-ended, and newsletter emails
 
-### Calendar (gog or ical-buddy)
+### Calendar (gog or icalBuddy)
 - `gog calendar events --days 2 --account pinchymacsnappy@gmail.com`
-- Also check Apple calendars: `ical-buddy -f eventsToday+2`
+- Also check Apple calendars: `icalBuddy -f eventsToday+2`
 - If event within 2 hours, notify Trevor
 
 ### Weather (Orem, UT)

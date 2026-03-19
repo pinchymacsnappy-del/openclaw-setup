@@ -4,7 +4,14 @@
 
 set -euo pipefail
 
-CLAUDE_BIN="/Users/pinchy/Library/Application Support/Claude/claude-code/2.1.74/claude"
+# Find the latest Claude Code binary (version-agnostic)
+CLAUDE_DIR="/Users/pinchy/Library/Application Support/Claude/claude-code"
+CLAUDE_BIN="$(ls -d "$CLAUDE_DIR"/*/claude 2>/dev/null | sort -V | tail -1)"
+
+if [ -z "$CLAUDE_BIN" ] || [ ! -x "$CLAUDE_BIN" ]; then
+  echo "Claude Code binary not found in $CLAUDE_DIR"
+  exit 1
+fi
 MESSAGE="$*"
 
 if [ -z "$MESSAGE" ]; then
